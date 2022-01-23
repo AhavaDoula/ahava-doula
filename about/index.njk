@@ -1,0 +1,70 @@
+---
+layout: layouts/post.njk
+permalink: /about/
+eleventyNavigation:
+  key: About
+  order: 1
+---
+
+<div class="about-page hero-section">
+  <header>
+    <h1 class="home">
+      <a href="{{ '/' | url }}">
+        <svg viewBox="0 0 900 300" width="120" height="100%" class="logo">
+          <path id="logoMark" d="M350.3537,169.0029a82.1533,82.1533,0,0,0,8.4026-35.7955,65.9432,65.9432,0,0,0-19.5571-46.5739c-20.6041-20.3767-51.4882-28.7361-79.855-26.1892a118.0173,118.0173,0,0,0-82.2214,44.6021,145.14,145.14,0,0,0-30.5889,90.1825c.1188,17.9068,3.7756,36.252,14.3049,51.0763a86.7358,86.7358,0,0,0,35.923,28.6883c26.3464,11.5966,56.1927,11.1426,83.8442,4.7476,15.2276-3.5217,29.6915-9.2787,43.9384-15.6129,12.1989-5.4237,23.9942-11.69,34.54-19.9371,11.6618-9.12,21.2583-20.92,26.3643-34.9232,3.0969-8.4934,3.9692-17.9778.3386-26.4358A32.0587,32.0587,0,0,0,372.4656,168.21c-12.95-7.6722-28.44-7.181-41.9444-1.3181-6.8066,2.9551-13.0559,7.7157-18.8017,12.34a151.0341,151.0341,0,0,0-16.3141,15.3921c-15.8644,17.2221-28.3855,37.23-38.25,58.4108q-5.8087,12.4723-10.4032,25.4651a4.3438,4.3438,0,0,0,3.0045,5.2915,4.3878,4.3878,0,0,0,5.2915-3.0044c8.1553-23,19.2932-45.2652,33.869-64.902A173.2747,173.2747,0,0,1,314.84,187.7728c10.2984-8.8,22.1581-16.9509,35.9527-16.8346,10.8722.0916,23.646,5.5212,27.5118,16.1988,2.7013,7.4611.8157,15.676-2.3022,22.7095a66.37,66.37,0,0,1-10.89,16.9515c-8.5691,9.718-19.3623,17.0368-30.746,23.07a269.8154,269.8154,0,0,1-34.201,15.088,188.4,188.4,0,0,1-23.3717,6.834,158.4144,158.4144,0,0,1-16.9792,2.8531c-12.905,1.3965-26.1816,1.5919-38.9481-.9591-13.867-2.771-27.3666-8.43-38.5372-17.1909a68.1356,68.1356,0,0,1-24.3343-36.9709c-3.953-15.4573-3.66-32.2464-.9858-47.9044a138.5027,138.5027,0,0,1,14.4323-42.366c14.1144-26.1955,37.1-47.0289,65.7949-55.8063,27.9614-8.5532,59.4142-6.0163,84.2376,10.0457,9.4625,6.1228,17.8346,14.3891,23.0841,25.0715,7.0014,14.2474,6.9221,30.7549,2.3727,45.7124-.7013,2.3058-1.5166,4.5687-2.4022,6.8094-.09.2284-.1856.455-.2791.6821.3381-.8214.1088-.2534.0337-.0807-.1619.3725-.324.7449-.4906,1.1153q-.4209.9357-.8681,1.859a4.4168,4.4168,0,0,0,1.5433,5.8855c1.8839,1.1019,4.8715.558,5.8854-1.5432Z" />
+        </svg>
+      </a>
+    </h1>
+
+    <ul class="nav">
+    {%- for entry in collections.all | eleventyNavigation %}
+      <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+    {%- endfor %}
+    </ul>
+  </header>
+  <div class="hero-card">
+    <h1>About Ahava Doula</h1>
+  </div>
+</div>
+<div class="about-page hero-support-section">
+  <div class="about-page full-w">
+  <h2 class="title">Ahava: Hebrew </h2>
+  <p>
+    In Hebrew, the word Ahava is used as a noun and verb. Ahava means, "to have affection, sexually or otherwise, love, like, to befriend, to be intimate."
+    Ahava is the act of love.
+    Strong's Exhaustive Dictionary
+  </p>
+    <p>Doulas are trained professionals who provide loving, non judgemental, physical, emotional and informational support so birthing families can feel confident and ready to start their journey into parenthood. A doula can support you to gather information and make choices that feel good for your family throughout pregnancy, birth and postpartum.</p>
+  </div>
+  <div class="about-page row">
+    <div class="col">
+      <h1 class="title">Meet Jessie</h1>
+      <h3 class="sub-title">~ Birth Doula | Postpartum Doula  ~</h3>
+      <p>
+        Jessie’s journey to becoming a doula began when she was just a child. At the age of seven, Jessie was present to watch as her brother was born at home. Her mother, a midwife and doula, educated Jessie about what was to be expected and then she witnessed as her baby brother entered the world in her parents bedroom. The memories of that day are still vivid and bring warm feelings of love and family connectedness whenever she thinks about it.
+As Jessie got older, she worked with children in many different settings, got her Bachelor's Degree in Social Work, a license in Early Childhood Education and then worked as a preschool teacher for nine years. During her time as a preschool teacher, Jessie gained a deeper understanding of infants and how we as adults can nurture their development. During that time,
+Jessie also realized how families were not getting the early support and education they needed to feel successful. With her passion to support families, she left her preschool career to become a birth and postpartum doula. Jessie believes that when given the right amount of support, love and education, families can have more meaningful and positive birth and postpartum experiences.
+      </p>
+    </div>
+    <div class="col">
+      <img src="../img/jessie-kid.jpg" />
+    </div>
+  </div>
+  <div class="row testimonial">
+    <div class="col">
+      <p>
+        ”I worked with Jessie during my first few weeks of postpartum and truly found her to be such an important element as I started to navigate motherhood. She is VERY knowledgeable and provided me with so many informative facts and research pertaining to questions I had. Jessie also had a list of resources that she directed me to that was specific to my situation(s). I can’t recommend her enough! She’s also such a sweet, heartwarming person and I looked forward to our time together each week. Thanks so much for the support you gave me and my family during such a transformative time in our lives!”
+        ~ Rachel A.
+      </p>
+    </div>
+  </div>
+  <div class="about-page row">
+    <div class="col">
+      <img src="../img/pro-doula-logo.png" />
+    </div>
+    <div class="col">
+      <img src="../img/dona-logo.png" />
+      <p class="cert-desc">Certifying Birth and Postpartum Doula </p>
+    </div>
+  </div>
+</div>

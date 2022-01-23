@@ -1,0 +1,117 @@
+---
+layout: layouts/home.njk
+permalink: /services/
+eleventyNavigation:
+  key: Services
+  order: 2
+---
+
+<div class="services-page hero-section">
+  <header>
+    <h1 class="home">
+      <a href="{{ '/' | url }}">
+        <svg viewBox="0 0 900 300" width="120" height="100%" class="logo">
+          <path id="logoMark" d="M350.3537,169.0029a82.1533,82.1533,0,0,0,8.4026-35.7955,65.9432,65.9432,0,0,0-19.5571-46.5739c-20.6041-20.3767-51.4882-28.7361-79.855-26.1892a118.0173,118.0173,0,0,0-82.2214,44.6021,145.14,145.14,0,0,0-30.5889,90.1825c.1188,17.9068,3.7756,36.252,14.3049,51.0763a86.7358,86.7358,0,0,0,35.923,28.6883c26.3464,11.5966,56.1927,11.1426,83.8442,4.7476,15.2276-3.5217,29.6915-9.2787,43.9384-15.6129,12.1989-5.4237,23.9942-11.69,34.54-19.9371,11.6618-9.12,21.2583-20.92,26.3643-34.9232,3.0969-8.4934,3.9692-17.9778.3386-26.4358A32.0587,32.0587,0,0,0,372.4656,168.21c-12.95-7.6722-28.44-7.181-41.9444-1.3181-6.8066,2.9551-13.0559,7.7157-18.8017,12.34a151.0341,151.0341,0,0,0-16.3141,15.3921c-15.8644,17.2221-28.3855,37.23-38.25,58.4108q-5.8087,12.4723-10.4032,25.4651a4.3438,4.3438,0,0,0,3.0045,5.2915,4.3878,4.3878,0,0,0,5.2915-3.0044c8.1553-23,19.2932-45.2652,33.869-64.902A173.2747,173.2747,0,0,1,314.84,187.7728c10.2984-8.8,22.1581-16.9509,35.9527-16.8346,10.8722.0916,23.646,5.5212,27.5118,16.1988,2.7013,7.4611.8157,15.676-2.3022,22.7095a66.37,66.37,0,0,1-10.89,16.9515c-8.5691,9.718-19.3623,17.0368-30.746,23.07a269.8154,269.8154,0,0,1-34.201,15.088,188.4,188.4,0,0,1-23.3717,6.834,158.4144,158.4144,0,0,1-16.9792,2.8531c-12.905,1.3965-26.1816,1.5919-38.9481-.9591-13.867-2.771-27.3666-8.43-38.5372-17.1909a68.1356,68.1356,0,0,1-24.3343-36.9709c-3.953-15.4573-3.66-32.2464-.9858-47.9044a138.5027,138.5027,0,0,1,14.4323-42.366c14.1144-26.1955,37.1-47.0289,65.7949-55.8063,27.9614-8.5532,59.4142-6.0163,84.2376,10.0457,9.4625,6.1228,17.8346,14.3891,23.0841,25.0715,7.0014,14.2474,6.9221,30.7549,2.3727,45.7124-.7013,2.3058-1.5166,4.5687-2.4022,6.8094-.09.2284-.1856.455-.2791.6821.3381-.8214.1088-.2534.0337-.0807-.1619.3725-.324.7449-.4906,1.1153q-.4209.9357-.8681,1.859a4.4168,4.4168,0,0,0,1.5433,5.8855c1.8839,1.1019,4.8715.558,5.8854-1.5432Z" />
+        </svg>
+      </a>
+    </h1>
+
+    <ul class="nav">
+    {%- for entry in collections.all | eleventyNavigation %}
+      <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+    {%- endfor %}
+    </ul>
+  </header>
+  <div class="hero-card">
+    <h1>Services & Packages</h1>
+  </div>
+</div>
+<div class="services-page hero-support-section">
+  <div class="col">
+    <h1 class="title">Birth Doula Services</h1>
+    <h2>$1600</h2>
+    <p>
+      Studies have shown that having a Doula present during your birth results in:
+      25% shorter labors
+      31% less use of Pitocin
+      28% less likely to have a cesarean birth
+      9% less use of pain medication
+      66% more likely to rate their childbirth experience positively
+    </p>
+    <p>
+      As your birth doula, we will work together so you are feeling confident and ready for the birth of your baby. I am there to support you throughout your pregnancy and birth by providing continuous emotional, informational and physical support to help you to have a more satisfying and empowering birth experience. During each phase of labor, I will be there to help you and your partner stay present with the birth, ask questions to be sure you are informed and nurtured throughout the entire process.
+    </p>
+
+    <p>Birth Doula packages include:</p>
+    <ul>
+      <li>Two prenatal visits</li>
+      <li>Basic childbirth education, identification of your support needs, birth planning, and comfort and relaxation techniques for labor</li>
+      <li>Meeting with your care provider if desired</li>
+      <li>Unlimited phone or email consultations throughout pregnancy and postpartum </li>
+      <li>Unlimited phone or email consultations throughout pregnancy and postpartum</li>
+      <li>On call 24/7 from 37 weeks until the birth of your baby </li>
+      <li>Continuous birth support until two hours postpartum</li>
+      <li>One postpartum visit usually lasting two hours</li>
+      <li>Early breastfeeding support for up to six weeks after birth</li>
+      <li>Guaranteed back-up doula services</li>
+      <li>Extensive referrals to any necessary services in your area </li>
+      <li>Lactation support and education within the scope of a doula, Referrals to IBCLC when necessary</li>
+    </ul>
+  </div>
+  <div class="col">
+    <div>
+      <img src="../img/birth.jpg" />
+    </div>
+  </div>
+</div>
+<div class="services-page hero-support-section">
+  <div class="col">
+    <div>
+      <img src="../img/b&l-hospital.jpg" />
+    </div>
+  </div>
+  <div class="col">
+    <h1 class="title">Postpartum Doula Support</h1>
+    <h2>$40/hour</h2>
+    <p>
+      As your postpartum doula, I will be there to help ease the transition into parenthood and help support you as you navigate the first days and weeks with your new baby. Bringing baby home is a huge life transition and as your postpartum doula, I am here to help make it as enjoyable and peaceful as possible. I will be there to provide emotional and physical support, help with chest/breastfeeding, and to provide evidence based education so you will feel confident and nurtured during this time.
+      My goal is to help create space for the entire family to bond, leading to a more fulfilling fourth trimester.
+    </p>
+    <p>Postpartum package includes</p>
+    <ul>
+      <li>Prenatal visit to help prepare the home and nursery for when baby arrives</li>
+      <li>Tips on postpartum healing and self care</li>
+      <li>Breastfeeding support and education</li>
+      <li>Emotional support</li>
+      <li>Light housekeeping including dishes and laundry </li>
+      <li>Help with meal preparation or setting up meal train with friends and family</li>
+      <li>Assistance with older children</li>
+      <li>Preparation of pump supplies or bottles</li>
+      <li>Babywearing assistance, education, and demonstration </li>
+      <li>Sleeping solutions and how to get enough sleep in the first weeks </li>
+      <li>Extensive referrals to any necessary services in your area</li>
+      <li>Help create a nurturing & quiet environment for the family</li>
+      <li>Care for baby when parents want to shower, nap, or spend some special time with older child(ren)</li>
+      <li>Hands-on newborn education</li>
+      <li>Evidence based education and support regarding: </li>
+
+      <li>Postpartum healing</li>
+      <li>Bengkung belly binding</li>
+      <li>Breastfeeding and bottle feeding</li>
+      <li>Safe sleep guidelines</li>
+      <li>Newborn care</li>
+      <li>Bathing</li>
+      <li>Screening for postpartum mood disorders</li>
+      <li>Baby soothing techniques</li>
+      <li>Baby wearing</li>
+      <li>Bonding</li>
+      <li>Normal infant sleep patterns</li>
+      <li>Multiples</li>
+      <li>Partner and sibling support including bonding with the new baby</li>
+      <li>Integrating new baby into the home with siblings</li>
+      <li>Understanding your baby’s cues</li>
+      <li>Typical infant growth and development </li>
+      <li> **Handouts are available for any of the topics listed above* </li>
+    </ul>
+  </div>
+</div>
